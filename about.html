@@ -1,0 +1,93 @@
+<html>  
+    <head>
+        <title>Discord Coding Lounge</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="images/x-icon" href="https://images-ext-1.discordapp.net/external/jgT0rbtvxgXsi_-I0nYTpQFRIZUoniaG4rL0_1qZYlQ/%3Fquality%3Dlossless/https/cdn.discordapp.com/emojis/791239903945162782.png" />
+    </head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-934HL5SHXQ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-934HL5SHXQ');
+        </script>
+
+    <body>
+
+        <nav>
+            <div class="bar">
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="apps">Application Guide</a></li>
+            </div>
+        </nav>
+
+        <center>
+            <div class="head">
+                <h1>The Discord Coding Lounge</h1>
+            </div>
+
+            <img src="https://images-ext-1.discordapp.net/external/2GyQDCViHAFYfzX4Kbv62rbSD0b1QDdX9wvbqM2DkRA/https/cdn.discordapp.com/icons/970775928596746290/a_d5eb6c4cc256a123afd4a518d62c8960.gif" width="200" height="200"></img>
+
+            <div class="bod">
+                <h2>How you can join</h2>
+                <p>
+                    You can join & participate in the Discord Coding Lounge community by joining the discord below. You can participate in giveaways, community events, chatting, and even coding help!  Participating in this community is a great way to develop coding skills, and meet new people.
+                </p>
+
+            </div>
+        </center>
+
+        <center>
+            <div class="box">
+                <div class="btn">  
+                    <button onclick="discord()">Join Today!</button>
+                </div>
+            </div>
+        </center>
+
+
+        <div class="footer">
+            <center>
+                <footer>
+                    © Krypton Development 2023
+                </footer>
+            </center>
+        </div>
+
+
+        <script>
+            //Discord Button Function
+            async function discord() {
+                let input = window.confirm(`Are you sure you want to go to discord.gg/codinglounge?`);
+                
+                if (input == true) {
+                   window.location.href = 'https://discord.gg/codinglounge';
+                   return;
+                } else if (input == false) {
+                    return;
+                }
+            }
+
+            //prompt hyperlink
+            async function link() {
+                let input;
+
+                while (!input) {
+                    input = window.prompt('Your message for the developers');
+
+                    if (input == null) {
+                        break;
+                    }
+
+                    console.log(`Developer message: ${input}`)
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
