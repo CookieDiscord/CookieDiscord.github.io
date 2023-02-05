@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     margin:0;
-    background-color: #36393f;
+    background-color: #cc00cc;
     color:white;
 }
 .img {
@@ -13,19 +13,12 @@ body {
     padding: 10px;
 }
 
-form {
-    background: rgb(112, 112, 112);
-    padding: 60px;
-    width: 550px;
-    max-width: calc(100% - 60px);
-}
-
 button {
     width:17%;
     height:5%;
     padding: 10px;
     color: white;
-    background: #1aaaef;
+    background: #cc00cc;
     cursor:grab;
     border-radius: 30px;
     font-size:15px;
